@@ -76,7 +76,20 @@ jobs:
       with:
         name: ICSharpCode.CodeConverter.Func.${{ env.BuildVersion }}.zip
         path: Func/bin/${{ env.BuildTarget }}/publish/
-        
+
+ build-vs2026:
+    runs-on: windows-2025-vs2026
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Add Visual Studio 2026 MSBuild to PATH
+      uses: microsoft/setup-msbuild@v2
+      with:
+        vs-version: '[18.0,19.0)'
+
+    - name: Build VSIX with Visual Studio 2026
+      run: msbuild Vsix\Vsix.csproj -restore /p:Configuration=Release
+
  deploy:
      if: ${{ github.ref == 'refs/heads/master' }}
      concurrency: ci-${{ github.ref }}

@@ -15,7 +15,7 @@ See [wiki](https://github.com/icsharpcode/CodeConverter/wiki) for advice on gett
 
 Adds context menu items to convert projects/files between VB.NET and C#. See the [wiki documentation](https://github.com/icsharpcode/CodeConverter/wiki) for advice / help using it.
 
-Download from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.CodeConverter) (Use VS 2022 17.1+)
+Download from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.CodeConverter) (Visual Studio 2022 17.6+ or Visual Studio 2026).
 
 * Flexible: Convert a small selection, or a whole solution in one go, in either direction.
 * Accurate: Full project context (through Roslyn) is used to get the most accurate conversion.
@@ -51,7 +51,7 @@ Visual Basic .NET is slowly dying. It has support for *some* project types on .N
 ## Building/running from source
 
 1. Ensure you have [.NET Core SDK 6.0](https://dotnet.microsoft.com/download/dotnet-core/6.0)
-2. Open the solution in Visual Studio 2022+ (Community edition is sufficient)
+2. Open the solution in Visual Studio 2022 17.6+ or Visual Studio 2026 (Community edition is sufficient). Install the Visual Studio extension development workload to build the VSIX.
 3. To run the website, set CodeConverter.Web as the startup project
   * You will need [Node (LTS)](https://community.chocolatey.org/packages/nodejs-lts) 16.* (node 17 introduces a breaking change causing ERR_OSSL_EVP_UNSUPPORTED)
 5. To run the Visual Studio extension, set Vsix as the startup project

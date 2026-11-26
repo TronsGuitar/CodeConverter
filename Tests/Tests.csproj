@@ -40,8 +40,8 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.1.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="4.1.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces" Version="4.1.0" />
-    <PackageReference Include="Microsoft.Build" Version="17.4.0" />
-    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.4.0" />
+    <PackageReference Include="Microsoft.Build" Version="17.8.43" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.8.43" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
